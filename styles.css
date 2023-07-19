@@ -22,7 +22,7 @@ body{
 /*3er Paso*/
 
 .container {
-    width: 80%;
+    width: 10`0%;
     margin: 0 auto;
 }
 
@@ -75,23 +75,32 @@ nav .nav-links ul a{
 }
 
 .contenedorr{
-    padding: 200px;
-    position: relative;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 100px;
+   
 }
 
 .texto1-encima{
-    position: absolute;
+    display: flex;
+    align-items: center;
+    position:absolute; /*Si se borra desaparece, why*/
     font-style: bold;
     font-size: 30px;
+    top: 15%;
+    left: 50%;
+    margin: auto;
 
 }
 
 img{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 100%;
 }
 
 p{
@@ -101,31 +110,25 @@ p{
     justify-content: center;
 }
 
-.texto1-encima{
-    top: 10%;
-    left: 50%;
-}
-
-
 .texto2-encima{
     display: flex;
-    top: 15%;
-    left: 485px;
+    top: 19%;
+    left: 49%;
     position: absolute; /*hace que aparezca el texto*/
 }
 
 #horary{
     padding: 8px;
     position: absolute; /*Hace que aparezca el texto en donde haya configurado mi top*/
-    top: 18%;
-    left: 340px;
+    top: 19%;
+    left: 33.5%;
 }
 
 #lessons{
     padding: 8px;
     position: absolute;
-    top: 18%;
-    left: 690px;
+    top: 19%;
+    left: 66.5%;
 }
 
 #boton1{
@@ -134,7 +137,7 @@ p{
     padding: 8px;
     position: absolute;
     top: 20%;
-    left: 682px;
+    left: 33%;
     border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
@@ -146,9 +149,135 @@ p{
     padding: 8px;
     position: absolute;
     top: 20%;
-    left: 330px;
+    left: 66%;
     border-radius: 5px;
     font-weight: bold;
+    text-decoration: none;
+}
+
+
+h1 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+#section-two{
+    background-color: #f2eef5;
+    color: #994ff3;
+    margin-top: 100px;
+}
+
+#section-two h1{
+    border-bottom: 2px solid #fbdd74;
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    
+}
+
+#section-two .resources{ /*esto */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    place-items: center;
+    max-width: 2655px;
+    margin: auto;
+}
+
+#section-two .recursos {
+    height: 525px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background-color: #fffffe;
+    text-decoration: none; /*Para quitar lo subrayado de la palabra*/
+    color: #2e2e2e;
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.3); /*El 5 es lo extendido de la sombra mientras mas alto el valor mas se ve*/
+}
+
+#section-two img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+#section-two .recursos p{
+    font-size: 15px;
+
+}
+
+#section-two .recursos span {
+    opacity: 0%; /*Esto es para que desaparezca el codiguito ese que se pone en el spam*/
+}
+
+#section-two .recursos:hover span{
+    opacity: 100%;
+    color: #4fc4cf;
+    transition: opacity 0.25s ease-in;
+}
+
+.show-all {
+    text-decoration: none;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    background-color:  #f2eef5;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+    margin: auto; /*Sn esto no se centra, why?*/
+}
+
+.show-all:hover {
+    background-color: purple;
+    color: orange;
+}
+
+hr {
+    clear: both;
+    max-width: 93rem;
+    margin: 1.25rem auto;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 3px solid #e6e6e5;
+    border-left: 0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+#section-three {
+    background-color: #fffffe;
+    color: #994ff3;
+    
+}
+
+#section-three h3{
+    margin-top: 100px; /*Esto nos sirve para dejar un espacio entre secciones o divs, para que no queden pegado*/
+    display: flex;
+    justify-content: center;
+}
+
+#section-three .social-medias{
+    display: flex;
+    flex-direction: row;
+    max-width: 2655px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+#section-three a {
     text-decoration: none;
 }
 
